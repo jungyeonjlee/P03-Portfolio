@@ -6,4 +6,33 @@
 	src: url('../fonts/RephlexTrialTT-Regular.ttf');
 }
 
+@font-face {
+	font-family: 'Founders Grotesk Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGrotesk-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Founders Grotesk Bold';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGrotesk-Bold.otf');
+}
+
+@font-face {
+	font-family: 'Founders Grotesk Text Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGroteskText-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Founders Grotesk Text Bold';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGroteskText-Bold.otf');
+}
+
+
 

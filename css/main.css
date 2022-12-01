@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background-color: #738786;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAV BAR --------------------------------- */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+  padding-top: 0.5%;
+  padding-bottom: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.home-work-bio {
+  padding: 0.8rem;
+  padding-top: 1.3rem;
+}
+
+#nav-right {
+  display: flex;
+  flex-direction: row;
+}
+
+/* HOME PAGE -------------------------------- */
+
+#home-page {
+  background-image: url('../pics/star-grid.png');
+}
+
+.container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 25%;
+  margin-left: 5%;
+}
+
+.block-projects {
+
+}
+
+/* #projects {
+  background-image: url('../pics/star-grid.png');
+} */
+
+
+/* HEADERS ---------------------------------- */
+
+h1 {
+  font-family: 'Rephlex';
+  font-weight: normal;
+  font-size: 21vw;
+  margin: 0;
+  margin-top: 58vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 68.5%;
+  color: #C2DEDD;
+}
+
+h2 {
+  font-family: 'Founders Grotesk Bold';
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  color: #F2F2F2;
+}
+
+h3 {
+  font-family: 'Founders Grotesk Regular';
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0;
+  color: #C2DEDD;
+}
+
+h4 {
+  font-family: 'Founders Grotesk Text Bold';
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  color: #F2F2F2;
+}
+
+h5 {
+  font-family: 'Founders Grotesk Text Regular';
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  color: #C2DEDD;
+}
+
+p {
+  font-family: 'Founders Grotesk Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #F2F2F2;
+}

@@ -1,9 +1,41 @@
 /* found on GRIDS COMPLETED IAT 339 lecture */
 @font-face {
-	font-family: 'Neue Montreal';
-	font-weight: 100;
+	font-family: 'Rephlex';
+	font-weight: normal;
 	font-style: normal;
-	src: url('../fonts/RephlexTrial-Regular.otf');
+	src: url('../fonts/RephlexTrialTT-Regular.ttf');
 }
+
+@font-face {
+	font-family: 'Founders Grotesk Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGrotesk-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Founders Grotesk Bold';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGrotesk-Bold.otf');
+}
+
+@font-face {
+	font-family: 'Founders Grotesk Text Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGroteskText-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Founders Grotesk Text Bold';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/TestFoundersGroteskText-Bold.otf');
+}
+
+
+
+
 
 
