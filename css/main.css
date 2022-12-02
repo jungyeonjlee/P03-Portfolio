@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+img{
+  width: 100%;
+}
+
 /* NAV BAR --------------------------------- */
 
 nav {
@@ -38,18 +42,40 @@ nav {
 .container-projects {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0;
-  padding-top: 25%;
+  padding-top: 20%;
   margin-left: 5%;
+  margin-right: 5%;
 }
 
-.block-projects {
-
+.block-text-projects {
+  width: 50%;
+  margin-top: 2.5%;
 }
 
-/* #projects {
-  background-image: url('../pics/star-grid.png');
-} */
+.block-aritzia-projects {
+  width: 47.5%;
+}
+
+.p-text-projects {
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+}
+
+/* BIO -------------------------------------- */
+
+.container-bio {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#h2-bio {
+  font-size: 8vw;
+  line-height: 97% ;
+}
 
 
 /* HEADERS ---------------------------------- */
@@ -59,7 +85,7 @@ h1 {
   font-weight: normal;
   font-size: 21vw;
   margin: 0;
-  margin-top: 58vh;
+  margin-top: 54vh;
   margin-left: 5%;
   margin-right: 5%;
   line-height: 68.5%;
@@ -68,8 +94,9 @@ h1 {
 
 h2 {
   font-family: 'Founders Grotesk Bold';
-  font-size: 2em;
+  font-size: 7vw;
   font-weight: bold;
+  line-height: 78%;
   margin: 0;
   color: #F2F2F2;
 }
@@ -84,7 +111,7 @@ h3 {
 
 h4 {
   font-family: 'Founders Grotesk Text Bold';
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   margin: 0;
   color: #F2F2F2;
@@ -92,7 +119,7 @@ h4 {
 
 h5 {
   font-family: 'Founders Grotesk Text Regular';
-  font-size: 1.1em;
+  font-size: 1em;
   font-style: normal;
   font-weight: normal;
   margin: 0;
@@ -103,7 +130,7 @@ p {
   font-family: 'Founders Grotesk Text Regular';
   font-style: normal;
   font-weight: normal;
-  margin-top: 0;
-  font-size: 1.1em;
+  margin: 0;
+  font-size: 1em;
   color: #F2F2F2;
 }
