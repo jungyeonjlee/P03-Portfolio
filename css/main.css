@@ -78,6 +78,29 @@ nav {
 }
 
 
+/* FOOTER ----------------------------------- */
+
+footer {
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.footer-main-container {
+  display: flex;
+  gap: 15%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.footer-connect {
+  display: flex;
+}
+
+.h2-connect {
+  font-size: 2em;
+}
+
 /* HEADERS ---------------------------------- */
 
 h1 {
