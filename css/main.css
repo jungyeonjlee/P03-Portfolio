@@ -17,20 +17,55 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between ;
-  padding-top: 0.5%;
+  padding-top: 1%;
   padding-bottom: 1.5%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .home-work-bio {
-  padding: 0.8rem;
-  padding-top: 1.3rem;
+  color: #C2DEDD;
+  transition-duration: 0.4s;
+}
+
+.home-work-bio:hover {
+  color: #F2F2F2;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plus-animation-nav {
+  font-size: 1em;
+  color: #C2DEDD;
 }
 
 #nav-right {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  gap: 20%;
+}
+
+.nav-buttons:hover .plus-animation-nav{
+  transform: (-50%, -50%);
+	animation: plus-animation 0.3s ease-out;
+}
+
+@keyframes plus-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
 }
 
 /* HOME PAGE -------------------------------- */
@@ -45,7 +80,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  padding-top: 20%;
+  padding-top: 15%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -65,6 +100,17 @@ nav {
   margin-bottom: 2.5%;
 }
 
+.explore {
+  font-family: 'Founders Grotesk Text Bold';
+  font-size: 1em;
+  color: #C2DEDD;
+  transition-duration: 0.4s;
+}
+
+.explore:hover {
+  color: #F2F2F2;
+}
+
 /* BIO -------------------------------------- */
 
 .container-bio {
@@ -81,24 +127,58 @@ nav {
 /* FOOTER ----------------------------------- */
 
 footer {
-  width: 100%;
   margin-top: 10%;
-  margin-bottom: 5%;
+  padding-top: 7.5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #C2DEDD;
 }
 
 .footer-main-container {
   display: flex;
-  gap: 15%;
+  flex-wrap: wrap;
+  gap: 12.5%;
   margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  margin-bottom: 7.5%;
 }
 
 .footer-connect {
   display: flex;
+  
+}
+
+.h2-alternate {
+  color: #738786;
 }
 
 .h2-connect {
-  font-size: 2em;
+  font-size: 2vw;
+  color: #738786;
+  transition-duration: 0.4s;
+}
+
+.h5-connect {
+  color: #738786;
+}
+
+.plus-animation-footer {
+  font-size: 2vw;
+  color: #738786;
+}
+
+.footer-connect:hover .plus-animation-footer{
+  transform: (-50%, -50%);
+	animation: plus-animation 0.3s ease-out;
+}
+
+@keyframes plus-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
 }
 
 /* HEADERS ---------------------------------- */
