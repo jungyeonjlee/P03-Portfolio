@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 
-img{
+img {
   width: 100%;
 }
 
@@ -16,7 +16,7 @@ img{
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between ;
+  justify-content: space-between;
   padding-top: 1%;
   padding-bottom: 1.5%;
   padding-left: 5%;
@@ -29,6 +29,16 @@ nav {
 }
 
 .home-work-bio:hover {
+  color: #F2F2F2;
+}
+
+.reserved {
+  color: #C2DEDD;
+  transition-duration: 0.4s;
+  line-height: 140%;
+}
+
+.reserved:hover {
   color: #F2F2F2;
 }
 
@@ -48,24 +58,28 @@ nav {
 }
 
 #nav-right {
+  position: fixed;
+  top: 2%;
+  right: 5%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 20%;
 }
 
-.nav-buttons:hover .plus-animation-nav{
+.nav-buttons:hover .plus-animation-nav {
   transform: (-50%, -50%);
-	animation: plus-animation 0.3s ease-out;
+  animation: plus-animation 0.3s ease-out;
 }
 
 @keyframes plus-animation {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(90deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
 }
 
 /* HOME PAGE -------------------------------- */
@@ -74,13 +88,17 @@ nav {
   background-image: url('../pics/star-grid.png');
 }
 
+#projects {
+  margin-bottom: 10%;
+}
+
 .container-projects {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  padding-top: 15%;
+  padding-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -96,7 +114,7 @@ nav {
 
 .p-text-projects {
   width: 60%;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 2.5%;
 }
 
@@ -119,10 +137,64 @@ nav {
 }
 
 #h2-bio {
-  font-size: 8vw;
-  line-height: 97% ;
+  font-size: 7vw;
+  line-height: 98%;
 }
 
+#h4-bio {
+  font-family: 'Founders Grotesk Regular';
+  font-weight: normal;
+  color: #C2DEDD;
+}
+
+/* PROJECTS -------------------------- */
+
+#aritzia-project {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#goretex-project {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.h2-project-header {
+  font-size: 3.5em;
+  margin-top: 5%;
+  margin-bottom: 2.55%;
+}
+
+.h2-smaller-header {
+  font-size: 3.5em;
+  margin-bottom: 2.55%;
+  width: 70%;
+}
+
+#container-context {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+#container-problem {
+  margin-top: 5%;
+}
+
+#h5-context {
+  margin-top: 2.5%;
+}
+
+.p-50 {
+  width: 50%;
+}
+.img-as-a-link {
+  transition-duration: 0.15s;
+}
+
+.img-as-a-link:hover {
+  box-shadow: 2px 2px 48px #4a5757;
+}
 
 /* FOOTER ----------------------------------- */
 
@@ -138,14 +210,14 @@ footer {
 .footer-main-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 12.5%;
+  gap: 15%;
   margin-top: 2.5%;
   margin-bottom: 7.5%;
 }
 
 .footer-connect {
   display: flex;
-  
+
 }
 
 .h2-alternate {
@@ -159,6 +231,7 @@ footer {
 }
 
 .h5-connect {
+  font-size: 1vw;
   color: #738786;
 }
 
@@ -167,18 +240,19 @@ footer {
   color: #738786;
 }
 
-.footer-connect:hover .plus-animation-footer{
+.footer-connect:hover .plus-animation-footer {
   transform: (-50%, -50%);
-	animation: plus-animation 0.3s ease-out;
+  animation: plus-animation 0.3s ease-out;
 }
 
 @keyframes plus-animation {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(90deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
 }
 
 /* HEADERS ---------------------------------- */
