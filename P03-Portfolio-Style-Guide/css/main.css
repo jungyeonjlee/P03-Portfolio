@@ -70,7 +70,6 @@ nav {
 }
 
 .nav-buttons:hover .plus-animation-nav {
-  transform: (-50%, -50%);
   animation: plus-animation 0.3s ease-out;
 }
 
@@ -243,7 +242,6 @@ footer {
 }
 
 .footer-connect:hover .plus-animation-footer {
-  transform: (-50%, -50%);
   animation: plus-animation 0.3s ease-out;
 }
 
