@@ -1,38 +1,288 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
 body {
-  font-family: 'Founders Grotesk Regular', 'Rephlex',  sans-serif;
-  padding: 0;
   margin: 0;
+  background-color: #738786;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+section {
+  margin-top: 2.5%;
+}
+
+/* NAV BAR --------------------------------- */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.home-work-bio {
+  color: #C2DEDD;
+  transition-duration: 0.4s;
+}
+
+.home-work-bio:hover {
+  color: #F2F2F2;
+}
+
+.reserved {
+  color: #C2DEDD;
+  transition-duration: 0.4s;
+  line-height: 140%;
+}
+
+.reserved:hover {
+  color: #F2F2F2;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plus-animation-nav {
+  font-size: 1em;
+  color: #C2DEDD;
+}
+
+#nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20%;
+}
+
+.nav-buttons:hover .plus-animation-nav {
+  transform: (-50%, -50%);
+  animation: plus-animation 0.3s ease-out;
+}
+
+@keyframes plus-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+/* HOME PAGE -------------------------------- */
+
+#home-page {
+  background-image: url('../pics/star-grid.png');
+}
+
+#projects {
+  margin-bottom: 10%;
+}
+
+.container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.block-text-projects {
+  width: 50%;
+  margin-top: 2.5%;
+}
+
+.block-aritzia-projects {
+  width: 47.5%;
+}
+
+.p-text-projects {
+  width: 60%;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+
+.explore {
+  font-family: 'Founders Grotesk Text Bold';
+  font-size: 1em;
+  color: #C2DEDD;
+  transition-duration: 0.4s;
+}
+
+.explore:hover {
+  color: #F2F2F2;
+}
+
+/* BIO -------------------------------------- */
+
+.container-bio {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#h2-bio {
+  font-size: 7vw;
+  line-height: 98%;
+}
+
+#h4-bio {
+  font-family: 'Founders Grotesk Regular';
+  font-weight: normal;
+  color: #C2DEDD;
+}
+
+/* PROJECTS -------------------------- */
+
+#aritzia-project {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#goretex-project {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.h2-project-header {
+  font-size: 3.5em;
+  margin-top: 5%;
+  margin-bottom: 2.55%;
+}
+
+.h2-smaller-header {
+  font-size: 3.5em;
+  margin-bottom: 2.55%;
+  width: 70%;
+}
+
+#container-context {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+#container-problem {
+  margin-top: 5%;
+}
+
+#h5-context {
+  margin-top: 2.5%;
+}
+
+.p-50 {
+  width: 50%;
+}
+.img-as-a-link {
+  transition-duration: 0.15s;
+}
+
+.img-as-a-link:hover {
+  box-shadow: 2px 2px 48px #4a5757;
+}
+
+/* FOOTER ----------------------------------- */
+
+footer {
+  margin-top: 10%;
+  padding-top: 7.5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #C2DEDD;
+}
+
+.footer-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15%;
+  margin-top: 2.5%;
+  margin-bottom: 7.5%;
+}
+
+.footer-connect {
+  display: flex;
 
 }
 
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
+.h2-alternate {
+  color: #738786;
+}
+
+.h2-connect {
+  font-size: 2vw;
+  color: #738786;
+  transition-duration: 0.4s;
+}
+
+.h5-connect {
+  font-size: 1vw;
+  color: #738786;
+}
+
+.plus-animation-footer {
+  font-size: 2vw;
+  color: #738786;
+}
+
+.footer-connect:hover .plus-animation-footer {
+  transform: (-50%, -50%);
+  animation: plus-animation 0.3s ease-out;
+}
+
+@keyframes plus-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+/* HEADERS ---------------------------------- */
 
 h1 {
   font-family: 'Rephlex';
   font-weight: normal;
-  font-size: 8em;
+  font-size: 15vw;
   margin: 0;
+  line-height: 68.5%;
+  color: #C2DEDD;
 }
 
 h2 {
   font-family: 'Founders Grotesk Bold';
-  font-size: 3em;
+  font-size: 7vw;
   font-weight: bold;
+  line-height: 78%;
   margin: 0;
+  color: #F2F2F2;
 }
 
 h3 {
   font-family: 'Founders Grotesk Regular';
-  font-size: 2em;
+  font-size: 1.1em;
   font-weight: normal;
   margin: 0;
+  color: #C2DEDD;
 }
 
 h4 {
@@ -40,69 +290,23 @@ h4 {
   font-size: 1em;
   font-weight: bold;
   margin: 0;
+  color: #F2F2F2;
 }
 
 h5 {
   font-family: 'Founders Grotesk Text Regular';
-  font-size: 0.5625em;
+  font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   margin: 0;
+  color: #C2DEDD;
 }
 
 p {
   font-family: 'Founders Grotesk Text Regular';
-  margin-top: 0;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
   font-size: 1em;
-  line-height: 145%;
+  color: #F2F2F2;
 }
-
-form {
-  width: 100%;
-  background-color: #f7f7f7;
-  padding: 48px;
-  border-radius: 6px;
-}
-
-button {
-  background-color: #6066F5;
-  border: none;
-  color: white;
-  margin-top: 32px;
-  width: 23.75em;
-  height: 4em;
-  border-radius: 6px;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'PP Neue Montreal';
-  font-weight: bold;
-  font-size: 1em;
-  cursor: pointer;
-  transition: 0.15s;
-  
-}
-
-button:hover {
-  background-color: white;
-  color: rgb(21, 20, 26);
-  box-shadow: 3px 2px 6px #e2e2e2;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-
-
-
-
-
-
-
-

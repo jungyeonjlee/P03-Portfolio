@@ -17,249 +17,171 @@
 
   <header>
     <h1>P03 * PORTFOLIO STYLE GUIDE</h1>
-
-    <nav>
-      <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
-      <a class="button-nav" href="#text_elements">Text Elements</a>
-      <a class="button-nav" href="#combined_elements">Combined Elements</a>
-      <a class="button-nav" href="#products">Product Listing Template</a>
-      <a class="button-nav" href="#checkout-cart">Checkout Template</a>
-      <a class="button-nav" href="#citations">Citations</a>
-    </nav>
   </header>
 
 
   <!-- INTERACTIVE ELEMENTS SECTION // -->
-  <section id="interactive_elements">
+  <section>
     <h2>Interactive Elements</h2>
 
     <section class="element">
       <h3>In-Text-Link</h3>
       <h4>CSS selector:</h4>
-      <p>.p-in-text-link</p>
+      <p>.explore</p>
 
       <h4>Sample code:</h4>
-      <code>&lt;a href="https://google.ca"&gt;GORETEX-Pro&lt;/a&gt;</code>
+      <code>&lt;a class= "explore" href="https://google.ca"&gt;Aritzia&lt;/a&gt;</code>
 
       <h4>Rendered element:</h4>
-      <p class="p-statement"> This is gear for going further than you've ever been before.
-        <a class=a-in-text-link href="https://google.ca">GORETEX-Pro</a>
-        garments are for outdoor professionals and serious outdoor visionaries.
+      <p class="p-statement"> Using precedent, we were able to reimagine
+        <a class="explore" href="https://google.ca">Aritzia</a>
+        through the lens of the end user.
       </p>
     </section>
 
     <!-- Default Button styling section -->
-    <section class="element">
+    <section>
 
       <h3>Main Navigation</h3>
 
       <h4>CSS selector:</h4>
-      <p>.button-nav</p>
+      <p>.nav-buttons</p>
 
       <h4>Sample code:</h4>
-      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <code>&lt;a href="#" class="nav-buttons"&gt;Default Button&lt;/a&gt;</code>
 
       <h4>Rendered element:</h4>
       <nav>
-        <a class="button-nav" href="#products">Products</a>
-        <a class="button-nav" href="#brands">Brands</a>
-        <a class="button-nav" href="#technologies">Technologies</a>
-        <a class="button-nav" href="home-page">GORE-TEX</a>
-        <a class="button-nav" href="#search">Search</a>
-        <a class="button-nav" href="#login">Login</a>
-        <a class="button-nav" href="#checkout-cart">Checkout Cart</a>
-      </nav>
+
+        <div id="nav-left">
+          <a href="index.html">
+            <h5 class="reserved">JUNG-YEON LEE - a UX and Visual Designer</h5>
+          </a>
+        </div>
+
+        <div id="nav-right">
+
+          <div class="nav-buttons">
+            <div class="nav-plus">
+              <h2 class="plus-animation-nav">&nbsp;+&nbsp;</h2>
+            </div>
+            <div>
+              <a class="home-work-bio" href="index.html">
+                <h5>Home</h5>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-buttons">
+            <div class="nav-plus">
+              <h2 class="plus-animation-nav">&nbsp;+&nbsp;</h2>
+            </div>
+            <a class="home-work-bio" href="#projects">
+              <h5>Work</h5>
+            </a>
+          </div>
+
+          <div class="nav-buttons">
+            <div class="nav-plus">
+              <h2 class="plus-animation-nav">&nbsp;+&nbsp;</h2>
+            </div>
+            <a class="home-work-bio" href="#bio">
+              <h5>Bio</h5>
+            </a>
+          </div>
+
+        </div>
     </section>
 
-
     <section class="element">
-      <h3>Submit/Reset Buttons</h3>
 
-      <h4>CSS selector:</h4>
-      <p>button</p>
+      <section class="element">
+        <h3>Image as a Link</h3>
 
-      <h4>Sample code:</h4>
-      <code>&lt;button type="submit" value="Submit">Submitbutton&lt;/a&gt;</code>
+        <h4>CSS selector:</h4>
+        <p>.img-as-a-link</p>
 
-      <h4>Rendered element:</h4>
-      <button type="submit" value="Submit">Submit</button>
-      <button type="reset" value="Reset">Reset</button>
-    </section>
-
-
-    <section class="element">
-      <h3>Text Input Field with Label</h3>
-      <!-- referenced w3schools.com -->
-      <h4>CSS selector:</h4>
-      <p>input[type=text]</p>
-
-      <h4>Sample code:</h4>
-      <code>&lt;label class="label-text-input" for="firstname">First name:&lt;/label></code>
-      <code>&lt;input type="text" id="firstname" name="firstname" placeholder="First Name"&gt;</code>
-
-      <h4>Rendered element:</h4>
-      <label class="label-text-input" for="firstname">First name:</label>
-      <input type="text" id="firstname" name="firstname" placeholder="First Name">
-    </section>
-
-
-    <section class="element">
-      <h3>Radio Button with Label</h3>
-
-      <h4>CSS selector:</h4>
-
-      <h4>Sample code:</h4>
-      <code>&lt;input type="radio" id="standard-shipping" name="shipping-method" value="Standard Shipping"></code>
-      <code>&lt;label for="standard-shipping">Standard Shipping&lt;/label>&lt;br></code>
-
-      <h4>Rendered element:</h4>
-      <input type="radio" id="standard-shipping" name="shipping-method" value="Standard Shipping">
-      <label for="standard-shipping">Standard Shipping</label><br>
-      <input type="radio" id="express-shipping" name="shipping-method" value="Express Shipping">
-      <label for="express-shipping">Express Shipping</label><br>
-    </section>
-
-    <!-- got help from the TA -->
-    <section class="element">
-      <h3>Image as a Link</h3>
-
-      <h4>CSS selector:</h4>
-      <p>.img-as-a-link</p>
-
-      <h4>Sample code:</h4>
-      <code>&lt;a href="https://snowbrains.com/wp-content/uploads/2020/04/markus-eder-ski-sequence-alagna.jpg"> <br>
-          &lt;img src="https://snowbrains.com/wp-content/uploads/2020/04/markus-eder-ski-sequence-alagna.jpg" 
-          alt="Backcountry Snowboard">
+        <h4>Sample code:</h4>
+        <code>&lt;a href="../html/aritzia-project.html"> <br>
+          &lt;img src="../pics/aritzia-project.png" 
+          alt="Aritzia">
           &lt;/a></code>
 
-      <h4>Rendered element:</h4>
-      <a href="https://snowbrains.com/lockdown-binge-watch-23-of-the-worlds-best-ski-movies-for-free-on-red-bull-tv/">
-        <img class="img-as-a-link"
-          src="https://snowbrains.com/wp-content/uploads/2020/04/markus-eder-ski-sequence-alagna.jpg"
-          alt="Backcountry Snowboard">
-      </a>
+        <h4>Rendered element:</h4>
+        <div class="block-aritzia-projects">
+          <a href="../html/aritzia-project.html">
+            <img class="img-as-a-link" src="../pics/aritzia-project.png" alt="Aritzia">
+          </a>
+        </div>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>h1</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1>ATELEIA&lt;/h1></code>
+
+        <h1>ATELEIA</h1>
+        <h2>ATELEIA</h2>
+        <h3>ATELEIA</h3>
+        <h4>ATELEIA</h4>
+        <h5>ATELEIA</h5>
+      </section>
+
+      <section class="element">
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p>What I aim to do with this iteration is to allow exploratory users to discover
+        new items of clothing and feel confident about their choices due to the readily
+         available information. However, there is also the choice for mission based customers
+          that know what they are looking for to do so efficiently.&lt;/p></code>
+
+        <h3>Paragraphs</h3>
+        <p>What I aim to do with this iteration is to allow exploratory users to discover
+          new items of clothing and feel confident about their choices due to the readily
+          available information. However, there is also the choice for mission based customers
+          that know what they are looking for to do so efficiently. </p>
+      </section>
+
     </section>
 
-  </section>
-  <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-  <!-- TEXT ELEMENTS SECTION // -->
-  <section id="text_elements">
-    <h2>Text Elements</h2>
+    <section id="citations">
+      <h2>Citations</h2>
 
-    <section class="element">
+      <ul>
+        <li>Aritzia. Photographer. 2022. <strong>Aritzia Logo [Media]</strong> Retrieved from
+          <a class="explore" href="https://www.aritzia.com/en/home">https://www.aritzia.com/en/home</a>
+        </li>
+        <li>Jung-yeon Lee. Creator. 2022. <strong>Aritzia Mockups [Mockups]</strong> Retrieved from
+          <a class="explore" href="https://www.aritzia.com/en/home">Original</a>
+        </li>
+        <li>Jung-yeon Lee. Creator. 2022. <strong>GORE-TEX Mockups [Mockups]</strong> Retrieved from
+          <a class="explore" href="https://www.gore-tex.com/">Original</a>
+        </li>
+        <li>LLineto. Designer. 2022. <strong>Rephlex [Font]</strong> Retrieved from
+          <a class="explore" href="https://lineto.com/typefaces/rephlex">https://lineto.com/typefaces/rephlex</a>
+        </li>
+        <li>Klim Type Foundry. Designer. 2022. <strong>Founders Grotesk [Font]</strong>. Retrieved from
+          <a class="explore" href="https://klim.co.nz/retail-fonts/">https://klim.co.nz/retail-fonts/</a>
+        </li>
+      </ul>
 
-      <h3>Headings</h3>
-
-      <h4>CSS selector:</h4>
-      <p>h1</p>
-
-      <h4>Sample code:</h4>
-      <code>&lt;h1>GORETEX-Pro&lt;/h1></code>
-
-      <h1>GORETEX-Pro</h1>
-      <h2>GORETEX-Pro</h2>
-      <h3>GORETEX-Pro</h3>
-      <h4>GORETEX-Pro</h4>
-      <h5>GORETEX-Pro</h5>
     </section>
-
-    <section class="element">
-
-      <h4>CSS selector:</h4>
-      <p>p</p>
-
-      <h4>Sample code:</h4>
-      <code>&lt;p>This is gear for going further than you've ever been before.&lt;/p></code>
-
-      <h3>Paragraphs</h3>
-      <p>This is gear for going further than you've ever been before.
-        GORE-TEX PRO garments are for outdoor professionals and serious outdoor visionaries
-        who need the most rugged and durable protection available.
-        They are designed to be extremely breathable and come with the
-        ultimate GUARANTEED TO KEEP YOU DRY™ promise for waterproof protection
-        in a totally windproof product. So you can master even most extreme situations. </p>
-    </section>
-
-    <section class="element">
-      <h3>Numbered Lists</h3>
-
-      <h4>CSS selector:</h4>
-
-      <h4>Sample code:</h4>
-      <code>
-          &lt;ol type="1"> <br>
-          &lt;li>This&lt;/li> <br>
-          &lt;li>is&lt;/li> <br>
-          &lt;li>a&lt;/li> <br>
-          &lt;li>list.&lt;/li> <br>
-          &lt;/ol></code>
-
-      <ol type="1">
-        <li>This</li>
-        <li>is</li>
-        <li>a</li>
-        <li>list.</li>
-      </ol>
-    </section>
-
-  </section>
-  <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-  <!-- COMBINED ELEMENTS SECTION // -->
-  <section id="combined_elements">
-    <h2>Combined Elements</h2>
-
-    <section id="products" class="element">
-      <h3>Product/Service Listing</h3>
-
-      <nav>
-        <a class="button-nav" href="#products">Products</a>
-        <a class="button-nav" href="#brands">Brands</a>
-        <a class="button-nav" href="#technologies">Technologies</a>
-        <a class="button-nav" href="home-page">GORE-TEX</a>
-        <a class="button-nav" href="#search">Search</a>
-        <a class="button-nav" href="#login">Login</a>
-        <a class="button-nav" href="#checkout-cart">Checkout Cart</a>
-      </nav>
-
-    <section id="checkout-cart" class="element">
-      <h3>Checkout Cart / Payment Form</h3>
-  </section>
-  <!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-  <section id="citations">
-    <h2>Citations</h2>
-
-    <ul>
-      <li>Arc'Teryx. Photographer. 2022. <strong>Alpha SV Jacket [Media]</strong> Retrieved from
-        <a href="https://arcteryx.com/ca/en/shop/womens/alpha-sv-jacket">https://arcteryx.com/ca/en/shop/womens/alpha-sv-jacket</a>
-      </li>
-      <li>Arc'Teryx. Photographer. 2022. <strong>Beta AR Jacket [Media]</strong> Retrieved from
-        <a href="https://arcteryx.com/ca/en/shop/mens/beta-ar-jacket">https://arcteryx.com/ca/en/shop/mens/beta-ar-jacket</a>
-      </li>
-      <li>Arc'Teryx. Photographer. 2022. <strong>Macai Pant [Media]</strong> Retrieved from
-        <a href="https://arcteryx.com/ca/en/shop/mens/macai-pant">https://arcteryx.com/ca/en/shop/mens/macai-pant</a>
-      </li>
-      <li>Arc'Teryx. Photographer. 2022. <strong>Sabre Pant [Media]</strong> Retrieved from
-        <a href="https://arcteryx.com/ca/en/shop/mens/sabre-pant">https://arcteryx.com/ca/en/shop/mens/sabre-pant</a>
-      </li>
-      <li>Google. Designer. 2016. <strong>Space Mono [Font]</strong>. Retrieved from
-        <a href="https://fonts.adobe.com/fonts/space-mono">https://fonts.adobe.com/fonts/space-mono</a>
-      </li>
-      <li>Huber, Dominik. Designer. 2020. <strong>GT-Flexa [Font]</strong> Retrieved from
-        <a href="https://www.gt-flexa.com/">https://www.gt-flexa.com/</a>
-      </li>
-      <li>Redbull. Photographer. 2021. <strong>Markus Eder Snowboarding [Media]</strong> Retrieved from
-        <a href="https://www.redbull.com/ca-en/get-to-know-freeskier-markus-eder-profile">https://www.redbull.com/ca-en/get-to-know-freeskier-markus-eder-profile</a>
-      </li>
-    </ul>
-
-  </section>
 
 
 
